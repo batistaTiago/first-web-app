@@ -2,61 +2,61 @@
 <html>
 	<head>
 		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 		<meta charset="UTF-8">
 		<title>Instant update database project - MainPage Title</title>
 	</head>
 
 	<body>
-
 		<header>
-			<h1>Instant update database project</h1>
+			<h1>Instant-updating database project</h1>
 		</header>
 
-		<nav>
-			<div>
+		<nav class="navigation">
+			<div class="select_users">
 				<h2><a href="#">Logged in as user's name</a></h2>
-				<ul>
-					<li><a href="#">List of other users</a></li>
-					<li><a href="#">List of other users</a></li>
-					<li><a href="#">List of other users</a></li>
-				</ul>
-				<ul> 
-					<li><a href="#">Manage Users</a></li>
-					<li><a href="#">Manage Movies</a></li>
-				</ul>
 			</div>
+
+			<div class="profile logged_out"></div>
+			<div class="admin_button"></div>
+
+			<ul class="users_menu">
+				<li><a href="#">List of other users</a></li>
+				<li><a href="#">List of other users</a></li>
+				<li><a href="#">List of other users</a></li>
+			</ul>
+			<ul class="admin_menu"> 
+				<li><a href="#">Manage Users</a></li>
+				<li><a href="#">Manage Movies</a></li>
+			</ul>
 		</nav>
 
-		<nav>
-			<h2>Favorites</h2>
-				<ul>
-					<li><a href="#">Movie Title</a></li>
-					<li><a href="#">Movie Title</a></li>
-					<li><a href="#">Movie Title</a></li>
-				</ul>
-		</nav>
-
-		<section>
-			<div>
+		<section class="admin">
+			<div class="admin_users">
 				<h2>Manage Users</h2>
+				<table class="admin_table">
+					<tr>
+						<th class="data_col">First Name</th>
+						<th class="data_col">Last Name</th>
+						<th class="admin_col">Delete</th>
+					</tr>
+					<tr class="data_row">
+						<td><input type="text" name="firstName" value="Dummy value" class="data"></td>
+						<td><input type="text" name="lastName" value="Dummy value - 2" class="data"></td>
+						<td class="delete_cell">Delete</td>
+					</tr>
+					<tr class="data_row">
+						<td><input type="text" name="firstName" value="Dummy value - 3" class="data"></td>
+						<td><input type="text" name="lastName" value="Dummy value - 4" class="data"></td>
+						<td class="delete_cell">Delete</td>
+					</tr>
+					<tr class="new_data_row">
+						<td><input type="text" name="firstName" class="newdata"></td>
+						<td><input type="text" name="lastName" class="newdata"></td>
+						<td class="insert_cell">Insert</td>
+					</tr>
+				</table>
 			</div>
-			<table>
-				<tr>
-					<th>First Name</th>
-					<th>Last Name</th>
-					<th>Insert/Delete</th>
-				</tr>
-				<tr>
-					<td><input type="text" name="firstName" value="Dummy value"></td>
-					<td><input type="text" name="lastName" value="Dummy value - 2"></td>
-					<td>Insert/Delete</td>
-				</tr>
-				<tr>
-					<td><input type="text" name="firstName" value="Dummy value - 3"></td>
-					<td><input type="text" name="lastName" value="Dummy value - 4"></td>
-					<td>Insert/Delete</td>
-				</tr>
-			</table>
 		</section>
 		
 		<footer>

@@ -33,7 +33,7 @@ header h1 {
     color: rgb(70,50,200);
 }
 
-ul.users, ul.admin {
+ul.users_menu, ul.admin_menu {
     position: absolute;
     right: 0;
     border-left: 1px solid gray;
@@ -41,28 +41,28 @@ ul.users, ul.admin {
     background-color: rgb(235, 235, 235);
 }
 
-ul.users {
+ul.users_menu {
     width: 200px;
 }
 
-.users li a, .admin li a {
+.users_menu li a, .admin_menu li a {
     font-size: 0.75em;
     padding: 5px;
     display: block;
 }
 
-.users li a:hover, .admin li a:hover {
+.users_menu li a:hover, .admin_menu li a:hover {
     background-color: rgb(70,50,200);
     color: white;
 }
 
 
-ul.admin {
+ul.admin_menu {
     width: 150px;
     display: none;
 }
 
-ul.users a, ul.admin a {
+ul.users_menu a, ul.admin_menu a {
     text-decoration: none;
     color: black;
 }
@@ -200,6 +200,140 @@ ul.favs li a:hover {
 
 .movie_single .actions .add_remove:hover {
     border-bottom: 3px solid #993300;
+}
+
+.admin .admin_users {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.admin .admin_users h2 {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+.admin .admin_table {
+    border-spacing: 2px;
+    border-collapse: separate;
+}
+
+.admin .admin_table th {
+    font-weight: bold;
+    text-align: left;
+    background-color: rgb(235, 235, 235);
+}
+
+.admin .admin_table th, .admin .admin_table td {
+    border: 1px solid black;
+}
+
+.admin_table th, .admin_table td, .admin_table input {
+    height: 35px;
+    width: 300px;
+}
+
+th.admin_col, td.delete_cell, td.insert_cell {
+    width: 80px;
+}
+
+.admin .admin_table th, .admin .admin_table input {
+    padding-left: 5px;
+    padding-right: 5px;
+} 
+
+.admin .admin_table input {
+    font-size: 0.9em;
+}
+
+.admin .admin_table input:focus {
+    background-color: rgb(254, 229, 172);
+}
+
+.add, .add:hover, .delete, .delete:hover, .down, .heart, .heart:hover, .profile, .logged_out, .trash, .trash:hover, .up{
+    background: url(images/sprites.png) no-repeat;
+}
+
+.add{
+    background-position: -56px -45px ;
+    width: 128px;
+    height: 128px;
+}
+
+.add:hover{
+    background-position: -56px -164px ;
+    width: 128px;
+    height: 128px;
+}
+
+.delete{
+    background-position: -186px -169px ;
+    width: 128px;
+    height: 128px;
+}
+
+.delete:hover{
+    background-position: -184px -42px ;
+    width: 128px;
+    height: 128px;
+}
+
+.down{
+    background-position: -323px -43px ;
+    width: 128px;
+    height: 128px;
+}
+
+.heart{
+    background-position: -58px -296px ;
+    width: 128px;
+    height: 128px;
+}
+
+.heart:hover{
+    background-position: -187px -299px ;
+    width: 128px;
+    height: 128px;
+}
+
+.profile: {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    background-position: -324px -140px ;
+    width: 128px;
+    height: 128px;
+}
+
+.profile.logged_in {
+    background-position: -33px -199px;
+}
+
+.profile.logged_out {
+    background-position: -0px -199px;
+}
+
+.logged_out{
+    background-position: -325px -274px ;
+    width: 128px;
+    height: 128px;
+}
+
+.trash{
+    background-position: -411px -35px ;
+    width: 128px;
+    height: 128px;
+}
+
+.trash:hover{
+    background-position: -438px -150px ;
+    width: 128px;
+    height: 128px;
+}
+
+.up{
+    background-position: -456px -269px ;
+    width: 128px;
+    height: 128px;
 }
 
 footer {

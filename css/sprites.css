@@ -1,0 +1,76 @@
+.add, .add-hover, .delete, .delete-hover, .down, .heart, .heart-hover, .login, .logout, .trash, .trash-hover, .up{
+	background: url(images/sprites.png) no-repeat;
+}
+
+.add{
+	background-position: -56px -45px ;
+	width: 128px;
+	height: 128px;
+}
+
+.add-hover{
+	background-position: -56px -164px ;
+	width: 128px;
+	height: 128px;
+}
+
+.delete{
+	background-position: -186px -169px ;
+	width: 128px;
+	height: 128px;
+}
+
+.delete-hover{
+	background-position: -184px -42px ;
+	width: 128px;
+	height: 128px;
+}
+
+.down{
+	background-position: -323px -43px ;
+	width: 128px;
+	height: 128px;
+}
+
+.heart{
+	background-position: -58px -296px ;
+	width: 128px;
+	height: 128px;
+}
+
+.heart-hover{
+	background-position: -187px -299px ;
+	width: 128px;
+	height: 128px;
+}
+
+.login{
+	background-position: -324px -140px ;
+	width: 128px;
+	height: 128px;
+}
+
+.logout{
+	background-position: -325px -274px ;
+	width: 128px;
+	height: 128px;
+}
+
+.trash{
+	background-position: -411px -35px ;
+	width: 128px;
+	height: 128px;
+}
+
+.trash-hover{
+	background-position: -438px -150px ;
+	width: 128px;
+	height: 128px;
+}
+
+.up{
+	background-position: -456px -269px ;
+	width: 128px;
+	height: 128px;
+}
+
